@@ -4,9 +4,8 @@
   "private": true,
   "main": "./dist/bundle.js",
   "scripts": {
-    "start": "webpack-dev-server -d --hot --inline --content-base",
-    "build": "webpack --config webpack.config.prod.js --progress -p",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "build": "webpack -p --progress",
+    "start": "webpack-dev-server"
   },
   "author": "Voxeet",
   "contributors": [
