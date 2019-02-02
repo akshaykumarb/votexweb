@@ -13,7 +13,7 @@ module.exports = {
     './src/index.js',
   ],
   devServer: {
-    port: process.env.PORT || 5000,
+    port: process.env.PORT,
     https: true,
     host: 'localhost',
   },
