@@ -4,8 +4,8 @@
   "private": true,
   "main": "./dist/bundle.js",
   "scripts": {
-    "build": "webpack -p --progress",
-    "start": "webpack-dev-server"
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "dev": "webpack-dev-server"
   },
   "author": "Voxeet",
   "contributors": [
