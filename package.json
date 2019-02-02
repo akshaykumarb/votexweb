@@ -5,7 +5,8 @@
   "main": "./dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server -d --hot --inline --content-base",
-    "build": "webpack --config webpack.config.prod.js --progress -p"
+    "build": "webpack --config webpack.config.prod.js --progress -p",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "author": "Voxeet",
   "contributors": [
